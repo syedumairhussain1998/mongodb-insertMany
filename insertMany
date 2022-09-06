@@ -1,0 +1,6 @@
+const User = require('../models/User')
+const list = async (request,response) =>{
+  const data =  await User.insertMany([{first_name:"Mahbir khan"},{first_name:"Syed Ammar Hussain"}])
+    response.json({data})
+}
+module.exports = { list }
